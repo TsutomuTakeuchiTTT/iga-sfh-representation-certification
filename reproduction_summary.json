@@ -1,0 +1,151 @@
+{
+  "repository": "iga-sfh-representation-certification",
+  "execution_mode": "execute",
+  "execution_batches": 2,
+  "selected_benchmarks": [
+    "01_diagonal_operator",
+    "02_nonnested_anisotropic",
+    "03_robust_postselection",
+    "04_sed_proxy"
+  ],
+  "started_utc": "2026-09-04T23:20:31.980363+00:00",
+  "finished_utc": "2026-09-04T23:21:20.837454+00:00",
+  "total_elapsed_seconds": 40.65397532500003,
+  "environment": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "all_passed": true,
+  "benchmarks": [
+    {
+      "benchmark": "01_diagonal_operator",
+      "script": "benchmarks/01_diagonal_operator/iga_diagonal_benchmark.py",
+      "script_sha256": "770e37b69b17474717ed2fb0db4a320ff33c110dba76f0fe1cc1205aaa06ea0c",
+      "elapsed_seconds": 3.457395695999992,
+      "returncode": 0,
+      "passed": true,
+      "missing_outputs": [],
+      "outputs": {
+        "diagonal_operator_benchmark_results.csv": {
+          "bytes": 8623,
+          "sha256": "705fc584a9d61d6b69a3c5dbf3179302a268ddd7328f58d87ff2bdc8a011e9c9"
+        },
+        "diagonal_operator_benchmark_summary.json": {
+          "bytes": 1377,
+          "sha256": "6f6d49d7b41d761124225061d56b4019d0f0a3672943e350e4ba4bed64dfe15c"
+        },
+        "fig_diagonal_operator_benchmark.pdf": {
+          "bytes": 29521,
+          "sha256": "e4b402183c855a106d8bb1dd81da0bf532e762413875158828ee6e55363e35a4"
+        },
+        "fig_diagonal_operator_benchmark.png": {
+          "bytes": 192651,
+          "sha256": "cef5ee51e11c5744b149e3f671a037d6b494f36b6e77314545c07c4864ed10bf"
+        }
+      },
+      "summary_file": "benchmarks/01_diagonal_operator/diagonal_operator_benchmark_summary.json"
+    },
+    {
+      "benchmark": "02_nonnested_anisotropic",
+      "script": "benchmarks/02_nonnested_anisotropic/iga_nonnested_anisotropic_benchmark.py",
+      "script_sha256": "46d800e978b0d92fa9d1e9ab0a4ab3025947814cdfb75f995de84e53f0c7471d",
+      "elapsed_seconds": 13.843738951999967,
+      "returncode": 0,
+      "passed": true,
+      "missing_outputs": [],
+      "outputs": {
+        "nonnested_anisotropic_benchmark_results.csv": {
+          "bytes": 15749,
+          "sha256": "81c5eb6076550876fe8d0d5db6f438f456ab663a1114ecdce2d1268c6a0147a8"
+        },
+        "nonnested_anisotropic_benchmark_summary.json": {
+          "bytes": 2975,
+          "sha256": "fef04e748db6736a378666fcedb6db7675ca1eeacba19f769f4efe2b7cc720c4"
+        },
+        "fig_nonnested_anisotropic_benchmark.pdf": {
+          "bytes": 29816,
+          "sha256": "e8ce641fe1279d7a647cb0055269ed685f624f187a783614f010f91cabcabde4"
+        },
+        "fig_nonnested_anisotropic_benchmark.png": {
+          "bytes": 155978,
+          "sha256": "d045904a39cfb2005e5455fc55b623eb53c87df135116263bc3720dd79b9f64c"
+        }
+      },
+      "summary_file": "benchmarks/02_nonnested_anisotropic/nonnested_anisotropic_benchmark_summary.json"
+    },
+    {
+      "benchmark": "03_robust_postselection",
+      "script": "benchmarks/03_robust_postselection/iga_robust_postselection_benchmark.py",
+      "script_sha256": "12bd8f8e7461c2a76b6e231507cac2fa6cd766cf79832f97fb347e4e947020fc",
+      "elapsed_seconds": 8.617155166000032,
+      "returncode": 0,
+      "passed": true,
+      "missing_outputs": [],
+      "outputs": {
+        "robustness_benchmark_results.csv": {
+          "bytes": 6405,
+          "sha256": "c3c91ff2710397f5e1ed78316e981462e7a7949c7923c654067fb0faa7ee6c22"
+        },
+        "postselection_coverage_results.csv": {
+          "bytes": 1456,
+          "sha256": "17ceb67b164a88f9e025657a0e6659523456642595fd5ed45c08b28ab0dc0e44"
+        },
+        "robust_postselection_benchmark_summary.json": {
+          "bytes": 4358,
+          "sha256": "3be991034badf83e6a296853439918fcc71575e78f7de670127e0c22dda2c58d"
+        },
+        "fig_robust_postselection_benchmark.pdf": {
+          "bytes": 25205,
+          "sha256": "f7751920c40fb50f9d55ef6f7f5a05c0e21d4043aba5fc4496641d217696c91f"
+        },
+        "fig_robust_postselection_benchmark.png": {
+          "bytes": 183306,
+          "sha256": "82cbe8ff246ec9b814fa2803f7876def2530210b97583e75c87a21cdab04baa8"
+        }
+      },
+      "summary_file": "benchmarks/03_robust_postselection/robust_postselection_benchmark_summary.json"
+    },
+    {
+      "benchmark": "04_sed_proxy",
+      "script": "benchmarks/04_sed_proxy/iga_sed_proxy_benchmark.py",
+      "script_sha256": "abc8670106496dab882016f0bd71668fbe812fa5c91995c91ea01f4a78ff8a2f",
+      "elapsed_seconds": 14.735685511000042,
+      "returncode": 0,
+      "passed": true,
+      "missing_outputs": [],
+      "outputs": {
+        "sed_candidate_results.csv": {
+          "bytes": 23494,
+          "sha256": "b59323f4346345bd20f22cbefe1c15eb761edeaa456663ef5f4ecf9aa3015aaf"
+        },
+        "sed_scenario_selections.csv": {
+          "bytes": 968,
+          "sha256": "5d35b6d1cfa1dacf9a1b9ab3e3cd996ecf3ae0ea0ce2495b65cdfcb1a764ddfa"
+        },
+        "sed_selected_monte_carlo_results.csv": {
+          "bytes": 1053,
+          "sha256": "0b046a83b43738c2445af8b1ff72271c502231a877ed470b97d9976028673c3e"
+        },
+        "sed_proxy_benchmark_summary.json": {
+          "bytes": 6291,
+          "sha256": "653d9ea6fe750337de793e3853036fb5654f735bc345e699bcbdf33c2e408f8e"
+        },
+        "fig_sed_proxy_benchmark.pdf": {
+          "bytes": 32867,
+          "sha256": "fc0198ca3fd33525fccee0e4ac619f9c3ffa78b6477b7f283bbb2d999ad13c24"
+        },
+        "fig_sed_proxy_benchmark.png": {
+          "bytes": 322842,
+          "sha256": "8aa11ca706d91be1c9fbd2d9422070067d2791da61221b3e95839f04cb3b30d0"
+        }
+      },
+      "summary_file": "benchmarks/04_sed_proxy/sed_proxy_benchmark_summary.json"
+    }
+  ],
+  "note": "The local verification harness executed the four benchmarks in two sequential batches; each benchmark process completed normally and passed its internal validation."
+}

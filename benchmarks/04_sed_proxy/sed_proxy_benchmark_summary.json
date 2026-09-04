@@ -1,0 +1,225 @@
+{
+  "benchmark": "physically structured SED proxy with finite mismatch library",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "state": {
+    "age_gyr": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      8.0,
+      12.0
+    ],
+    "baseline_sfh": [
+      0.01,
+      0.015,
+      0.025,
+      0.05,
+      0.13,
+      0.22,
+      0.3,
+      0.25
+    ],
+    "target_coefficients": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "state_radius": 0.08
+  },
+  "selection_parameters": {
+    "epsilon": 0.047,
+    "kappa": 0.06,
+    "snr_values": [
+      15,
+      30,
+      60
+    ],
+    "full_bands": [
+      "FUV",
+      "NUV",
+      "u",
+      "g",
+      "r",
+      "i",
+      "z",
+      "Y",
+      "J",
+      "H",
+      "K"
+    ],
+    "optical_bands": [
+      "u",
+      "g",
+      "r",
+      "i",
+      "z"
+    ]
+  },
+  "mismatch_library": [
+    {
+      "name": "metallicity_0.6",
+      "metallicity_ratio": 0.6,
+      "dust_av": 0.4,
+      "nebular_scale": 1.0
+    },
+    {
+      "name": "metallicity_1.4",
+      "metallicity_ratio": 1.4,
+      "dust_av": 0.4,
+      "nebular_scale": 1.0
+    },
+    {
+      "name": "dust_Av_0.25",
+      "metallicity_ratio": 1.0,
+      "dust_av": 0.25,
+      "nebular_scale": 1.0
+    },
+    {
+      "name": "dust_Av_0.60",
+      "metallicity_ratio": 1.0,
+      "dust_av": 0.6,
+      "nebular_scale": 1.0
+    },
+    {
+      "name": "nebular_0.6",
+      "metallicity_ratio": 1.0,
+      "dust_av": 0.4,
+      "nebular_scale": 0.6
+    },
+    {
+      "name": "nebular_1.4",
+      "metallicity_ratio": 1.0,
+      "dust_av": 0.4,
+      "nebular_scale": 1.4
+    }
+  ],
+  "scenario_selections": [
+    {
+      "scenario": "full_SNR15",
+      "coverage": "full",
+      "snr": 15,
+      "nominal_selected_candidate": "C3",
+      "nominal_selected_dimension": 3,
+      "nominal_certified_risk": 0.03865370928279273,
+      "nominal_max_actual_mismatch_risk": 0.04878655676956958,
+      "nominal_false_certification": true,
+      "nominal_worst_variant": "nebular_1.4",
+      "robust_selected_candidate": null,
+      "robust_selected_dimension": 0,
+      "robust_certified_outer_risk": null,
+      "robust_max_actual_mismatch_risk": null,
+      "robust_worst_variant": null
+    },
+    {
+      "scenario": "full_SNR30",
+      "coverage": "full",
+      "snr": 30,
+      "nominal_selected_candidate": "C3",
+      "nominal_selected_dimension": 3,
+      "nominal_certified_risk": 0.03795985946038619,
+      "nominal_max_actual_mismatch_risk": 0.048423863650351825,
+      "nominal_false_certification": true,
+      "nominal_worst_variant": "nebular_1.4",
+      "robust_selected_candidate": "C6",
+      "robust_selected_dimension": 6,
+      "robust_certified_outer_risk": 0.046596884028717866,
+      "robust_max_actual_mismatch_risk": 0.037765830743264554,
+      "robust_worst_variant": "dust_Av_0.60"
+    },
+    {
+      "scenario": "full_SNR60",
+      "coverage": "full",
+      "snr": 60,
+      "nominal_selected_candidate": "C3",
+      "nominal_selected_dimension": 3,
+      "nominal_certified_risk": 0.03777875094259993,
+      "nominal_max_actual_mismatch_risk": 0.048329978616013736,
+      "nominal_false_certification": true,
+      "nominal_worst_variant": "nebular_1.4",
+      "robust_selected_candidate": "C6",
+      "robust_selected_dimension": 6,
+      "robust_certified_outer_risk": 0.04346018503463207,
+      "robust_max_actual_mismatch_risk": 0.035082266867076946,
+      "robust_worst_variant": "dust_Av_0.60"
+    },
+    {
+      "scenario": "optical_SNR15",
+      "coverage": "optical",
+      "snr": 15,
+      "nominal_selected_candidate": "C4",
+      "nominal_selected_dimension": 4,
+      "nominal_certified_risk": 0.03561026964987892,
+      "nominal_max_actual_mismatch_risk": 0.05403344450725696,
+      "nominal_false_certification": true,
+      "nominal_worst_variant": "dust_Av_0.60",
+      "robust_selected_candidate": null,
+      "robust_selected_dimension": 0,
+      "robust_certified_outer_risk": null,
+      "robust_max_actual_mismatch_risk": null,
+      "robust_worst_variant": null
+    },
+    {
+      "scenario": "optical_SNR30",
+      "coverage": "optical",
+      "snr": 30,
+      "nominal_selected_candidate": "C3",
+      "nominal_selected_dimension": 3,
+      "nominal_certified_risk": 0.04346732204948969,
+      "nominal_max_actual_mismatch_risk": 0.05781437024444441,
+      "nominal_false_certification": true,
+      "nominal_worst_variant": "dust_Av_0.60",
+      "robust_selected_candidate": null,
+      "robust_selected_dimension": 0,
+      "robust_certified_outer_risk": null,
+      "robust_max_actual_mismatch_risk": null,
+      "robust_worst_variant": null
+    },
+    {
+      "scenario": "optical_SNR60",
+      "coverage": "optical",
+      "snr": 60,
+      "nominal_selected_candidate": "C3",
+      "nominal_selected_dimension": 3,
+      "nominal_certified_risk": 0.040944137106514934,
+      "nominal_max_actual_mismatch_risk": 0.05712952485639981,
+      "nominal_false_certification": true,
+      "nominal_worst_variant": "dust_Av_0.60",
+      "robust_selected_candidate": null,
+      "robust_selected_dimension": 0,
+      "robust_certified_outer_risk": null,
+      "robust_max_actual_mismatch_risk": null,
+      "robust_worst_variant": null
+    }
+  ],
+  "headline_checks": {
+    "scenario_count": 6,
+    "nominal_report_count": 6,
+    "robust_report_count": 2,
+    "nominal_false_certification_count": 6,
+    "robust_outer_envelope_violations": 0,
+    "unresolved_candidate_count": 0,
+    "maximum_nominal_solver_relative_difference": 2.4376056728669937e-12,
+    "maximum_robust_solver_relative_difference": 4.5538968151959125e-09,
+    "maximum_risk_bracket_width": 2.1789436871061385e-06,
+    "maximum_monte_carlo_rmse_relative_difference": 0.0014222990289497472
+  },
+  "monte_carlo": {
+    "repetitions_per_reported_procedure": 300000,
+    "seed": 20260827
+  },
+  "scope_note": "The robust guarantee covers the convex hull of the six declared one-factor mismatch operators. Joint extremes outside that set are not certified. The internal template generator is an SPS proxy and not a replacement for validation with an external production stellar-population library."
+}

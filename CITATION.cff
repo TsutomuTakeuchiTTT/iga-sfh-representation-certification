@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this software release and the associated article when available."
+title: "IGA SFH Representation Certification"
+type: software
+authors:
+  - family-names: Takeuchi
+    given-names: "Tsutomu T."
+  - family-names: Sakuragi
+    given-names: "Karin T."
+  - family-names: Kano
+    given-names: "Ryusei R."
+  - family-names: Matsui
+    given-names: "Sena A."
+version: 1.0.0
+license: BSD-3-Clause
+repository-code: "https://github.com/TsutomuTakeuchiTTT/iga-sfh-representation-certification"
+url: "https://github.com/TsutomuTakeuchiTTT/iga-sfh-representation-certification"
+abstract: >-
+  Reproducibility code for four controlled benchmarks of target-specific
+  representation selection and robust certification in galaxy
+  star-formation-history inference from integrated spectral energy
+  distributions.
+keywords:
+  - galaxy evolution
+  - spectral energy distribution
+  - star formation history
+  - inverse problems
+  - robust optimization
+  - post-selection inference

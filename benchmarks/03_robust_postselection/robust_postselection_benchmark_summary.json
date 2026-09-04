@@ -1,0 +1,138 @@
+{
+  "benchmark": "operator mismatch, nonlinear remainder, and post-selection coverage",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "robustness_parameters": {
+    "state_dimension": 6,
+    "state_radius": 0.9,
+    "epsilon": 0.48,
+    "kappa": 0.65,
+    "operator_scale": 0.3,
+    "nonlinear_scale": 0.2,
+    "singular_values": [
+      5.0,
+      2.6,
+      1.4,
+      0.75,
+      0.38,
+      0.18
+    ],
+    "target_coefficients": [
+      0.55,
+      0.45,
+      0.34,
+      0.25,
+      0.16,
+      0.1
+    ],
+    "operator_shape_diagonal": [
+      1.0,
+      0.8,
+      0.6,
+      0.45,
+      0.3,
+      0.2
+    ],
+    "nonlinear_direction": [
+      0.6591261645324119,
+      0.5070201265633938,
+      0.40561610125071507,
+      0.30421207593803623,
+      0.20280805062535753,
+      0.10140402531267877
+    ]
+  },
+  "selected_candidates": {
+    "nominal": "V2",
+    "robust": "V3"
+  },
+  "selected_candidate_diagnostics": {
+    "nominal_selected_nominal_risk": 0.4582109638733546,
+    "nominal_selected_coupled_risk": 0.4924223543611042,
+    "nominal_selected_robust_outer_risk": 0.5243282018147202,
+    "robust_selected_nominal_risk": 0.39155020960715864,
+    "robust_selected_coupled_risk": 0.4433668834298198,
+    "robust_selected_robust_outer_risk": 0.46441563211797676,
+    "nominal_selection_is_false_certification": true,
+    "robust_selection_is_valid_for_coupled_problem": true
+  },
+  "computational_checks": {
+    "maximum_nominal_analytic_relative_difference": 6.439293542825908e-15,
+    "maximum_nominal_solver_relative_difference": 4.6629367034256575e-15,
+    "maximum_robust_solver_relative_difference": 2.220446049250313e-15,
+    "maximum_risk_bracket_width": 5.6831167882798184e-08,
+    "maximum_coupled_closed_form_direct_absolute_difference": 1.6653345369377348e-16,
+    "robust_outer_envelope_violations": 0,
+    "unresolved_candidate_count": 0
+  },
+  "coverage_metadata": {
+    "coverage_probability": 0.95,
+    "repetitions": 1000000,
+    "seed": 20260826,
+    "marginal_half_width": 1.959963984540054,
+    "simultaneous_half_width": 2.2364766445577895,
+    "analytic_same_data_naive_coverage": 0.9025,
+    "analytic_same_data_selected_rmse": 1.2793044095787294
+  },
+  "coverage_results": {
+    "fixed_V1": {
+      "coverage": 0.949907,
+      "analytic_coverage": 0.95,
+      "conditional_bias": 0.0015178851790874329,
+      "analytic_conditional_bias": 0.0,
+      "conditional_rmse": 1.0003754703174161,
+      "analytic_conditional_rmse": 1.0,
+      "selection_frequency_V1": 1.0,
+      "selection_frequency_V2": 0.0
+    },
+    "fixed_V2": {
+      "coverage": 0.950237,
+      "analytic_coverage": 0.95,
+      "conditional_bias": 0.0008080957333823681,
+      "analytic_conditional_bias": 0.0,
+      "conditional_rmse": 0.9992025637175833,
+      "analytic_conditional_rmse": 1.0,
+      "selection_frequency_V1": 0.0,
+      "selection_frequency_V2": 1.0
+    },
+    "same_data_naive": {
+      "coverage": 0.902604,
+      "analytic_coverage": 0.9025,
+      "conditional_bias": 0.002169621328118781,
+      "analytic_conditional_bias": 0.0,
+      "conditional_rmse": 1.2790560949913834,
+      "analytic_conditional_rmse": 1.2793044095787294,
+      "selection_frequency_V1": 0.500582,
+      "selection_frequency_V2": 0.499418
+    },
+    "independent_selection": {
+      "coverage": 0.950144,
+      "analytic_coverage": 0.95,
+      "conditional_bias": 0.0017756238274419134,
+      "analytic_conditional_bias": 0.0,
+      "conditional_rmse": 0.9995714539769448,
+      "analytic_conditional_rmse": 1.0,
+      "selection_frequency_V1": 0.499814,
+      "selection_frequency_V2": 0.500186
+    },
+    "same_data_calibrated": {
+      "coverage": 0.950144,
+      "analytic_coverage": 0.95,
+      "conditional_bias": 0.002169621328118781,
+      "analytic_conditional_bias": 0.0,
+      "conditional_rmse": 1.2790560949913834,
+      "analytic_conditional_rmse": 1.2793044095787294,
+      "selection_frequency_V1": 0.500582,
+      "selection_frequency_V2": 0.499418
+    }
+  },
+  "maximum_coverage_analytic_absolute_difference": 0.00023700000000004273,
+  "maximum_absolute_coverage_z_score": 1.0874305785466585,
+  "maximum_rmse_analytic_absolute_difference": 0.0007974362824166858,
+  "maximum_selection_frequency_absolute_difference": 0.0005819999999999714
+}

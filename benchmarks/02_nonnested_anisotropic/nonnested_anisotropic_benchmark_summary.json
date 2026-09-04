@@ -1,0 +1,132 @@
+{
+  "benchmark": "non-nested anisotropic candidate benchmark",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "epsilon": 0.6,
+  "nominal_kappa": 0.45,
+  "strict_kappa": 0.1,
+  "singular_values": [
+    6.0,
+    3.0,
+    1.5,
+    0.8,
+    0.4,
+    0.2,
+    0.1,
+    0.05
+  ],
+  "target_coefficients": [
+    0.5,
+    0.42,
+    0.35,
+    0.28,
+    0.18,
+    0.12,
+    0.08,
+    0.05
+  ],
+  "state_axes": [
+    0.7,
+    1.8,
+    1.5,
+    0.55,
+    0.4,
+    0.3,
+    0.25,
+    0.2
+  ],
+  "state_rotation_degrees": {
+    "R23": 18.0,
+    "R14": -12.0
+  },
+  "discrepancy_axes": [
+    0.03,
+    0.08,
+    1.1,
+    0.12,
+    0.06,
+    0.04,
+    0.03,
+    0.02
+  ],
+  "discrepancy_rotation_degrees": {
+    "R34": 15.0,
+    "R25": -10.0
+  },
+  "rms_matched_isotropic_state_radius": 0.910700280004349,
+  "selection_rule": "minimum feasible dimension; within that layer, minimum risk upper bound; remaining ties by candidate label",
+  "selected_candidates": {
+    "full_anisotropic_directional": "B12",
+    "anisotropic_no_discrepancy": "B23",
+    "isotropic_no_discrepancy": "B12",
+    "full_strict_stability": null
+  },
+  "feasible_candidate_sets": {
+    "full_anisotropic_directional": [
+      "B12",
+      "C128",
+      "C123",
+      "D1234",
+      "D1256",
+      "E12345"
+    ],
+    "anisotropic_no_discrepancy": [
+      "B12",
+      "B23",
+      "C128",
+      "C123",
+      "D1234",
+      "D1256",
+      "E12345"
+    ],
+    "isotropic_no_discrepancy": [
+      "B12",
+      "B13",
+      "C128",
+      "C134",
+      "C123",
+      "D1234",
+      "D1256",
+      "E12345"
+    ],
+    "full_strict_stability": []
+  },
+  "all_strict_stability_candidates_infeasible": true,
+  "maximum_solver_relative_difference": 9.7550856281714e-12,
+  "maximum_risk_bracket_width": 8.54092816471308e-08,
+  "unresolved_candidate_count": 0,
+  "ranking_examples": {
+    "higher_dimension_can_be_worse": {
+      "lower_dimension_candidate": "B12",
+      "lower_dimension_risk": 0.5969120344203837,
+      "higher_dimension_candidate": "C134",
+      "higher_dimension_risk": 0.9538202976821002
+    },
+    "equal_dimension_geometry_comparison": {
+      "B12_full_risk": 0.5969120344203837,
+      "B23_full_risk": 0.6133182385996885
+    }
+  },
+  "asymmetric_support_diagnostic": {
+    "state_centre_coordinate_norm": 0.23600847442411893,
+    "discrepancy_centre_coordinate_norm": 0.161245154965971,
+    "closed_form_beta_plus": 0.5215182617201768,
+    "closed_form_beta_minus": 0.627115678065834,
+    "closed_form_worst_case_bias": 0.627115678065834,
+    "active_sign": "minus",
+    "numerical_beta_plus": 0.5215182617201767,
+    "numerical_beta_minus": 0.6271156780658323,
+    "absolute_error_beta_plus": 1.1102230246251565e-16,
+    "absolute_error_beta_minus": 1.6653345369377348e-15,
+    "maximum_absolute_error": 1.6653345369377348e-15,
+    "numerical_success": {
+      "plus": true,
+      "minus": true
+    }
+  }
+}

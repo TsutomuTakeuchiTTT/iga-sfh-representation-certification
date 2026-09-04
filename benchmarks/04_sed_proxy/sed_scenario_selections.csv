@@ -1,0 +1,7 @@
+scenario,coverage,snr,nominal_selected_candidate,nominal_selected_dimension,nominal_certified_risk,nominal_max_actual_mismatch_risk,nominal_false_certification,nominal_worst_variant,robust_selected_candidate,robust_selected_dimension,robust_certified_outer_risk,robust_max_actual_mismatch_risk,robust_worst_variant
+full_SNR15,full,15,C3,3,0.03865370928279273,0.04878655676956958,True,nebular_1.4,,0,,,
+full_SNR30,full,30,C3,3,0.03795985946038619,0.048423863650351825,True,nebular_1.4,C6,6,0.046596884028717866,0.037765830743264554,dust_Av_0.60
+full_SNR60,full,60,C3,3,0.03777875094259993,0.048329978616013736,True,nebular_1.4,C6,6,0.04346018503463207,0.035082266867076946,dust_Av_0.60
+optical_SNR15,optical,15,C4,4,0.03561026964987892,0.05403344450725696,True,dust_Av_0.60,,0,,,
+optical_SNR30,optical,30,C3,3,0.04346732204948969,0.05781437024444441,True,dust_Av_0.60,,0,,,
+optical_SNR60,optical,60,C3,3,0.040944137106514934,0.05712952485639981,True,dust_Av_0.60,,0,,,

@@ -1,0 +1,85 @@
+{
+  "benchmark": "analytic diagonal operator",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "numerical_optimizer": {
+    "method": "SLSQP",
+    "ftol": 1e-14,
+    "maxiter": 5000
+  },
+  "seed": 20260826,
+  "monte_carlo_size": 1000000,
+  "epsilon": 0.55,
+  "state_radius": 1.5,
+  "candidate_dimensions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "singular_values": [
+    12.0,
+    8.0,
+    5.0,
+    3.0,
+    1.8,
+    1.1,
+    0.65,
+    0.4,
+    0.25,
+    0.15,
+    0.09,
+    0.05
+  ],
+  "target_coefficients": [
+    0.5,
+    0.42,
+    0.36,
+    0.31,
+    0.27,
+    0.23,
+    0.19,
+    0.16,
+    0.13,
+    0.1,
+    0.075,
+    0.05
+  ],
+  "kappa_values": [
+    1.0,
+    0.2,
+    0.08
+  ],
+  "selected_dimensions": {
+    "1": 6,
+    "0.2": 7,
+    "0.08": null
+  },
+  "monotonicity_violations": {
+    "1": 0,
+    "0.2": 0,
+    "0.08": 0
+  },
+  "max_analytic_numerical_absolute_error": 9.992007221626409e-16,
+  "max_analytic_numerical_relative_error": 1.9984014443252818e-15,
+  "max_monte_carlo_mse_relative_error": 0.0006874579115463408,
+  "boundary_diagnostic": {
+    "candidate_dimension": 6,
+    "epsilon_equal_to_reference_risk": 0.5513495575625057,
+    "illustrative_bracket_half_width": 1e-06,
+    "status": "unresolved"
+  }
+}
