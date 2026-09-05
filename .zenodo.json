@@ -1,0 +1,33 @@
+{
+  "title": "IGA SFH Representation Certification",
+  "description": "Reproducibility code for four controlled benchmarks of target-specific representation selection and robust certification in galaxy star-formation-history inference from integrated spectral energy distributions.",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "BSD-3-Clause",
+  "creators": [
+    {
+      "name": "Takeuchi, Tsutomu T.",
+      "affiliation": "Division of Particle and Astrophysical Science, Nagoya University"
+    },
+    {
+      "name": "Sakuragi, Karin T.",
+      "affiliation": "Division of Particle and Astrophysical Science, Nagoya University"
+    },
+    {
+      "name": "Kano, Ryusei R.",
+      "affiliation": "Division of Particle and Astrophysical Science, Nagoya University; Institute for Astronomy, University of Edinburgh"
+    },
+    {
+      "name": "Matsui, Sena A.",
+      "affiliation": "Division of Particle and Astrophysical Science, Nagoya University"
+    }
+  ],
+  "keywords": [
+    "galaxy evolution",
+    "spectral energy distribution",
+    "star formation history",
+    "inverse problems",
+    "robust optimization",
+    "post-selection inference"
+  ]
+}
