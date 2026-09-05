@@ -1,6 +1,7 @@
 # IGA SFH Representation Certification
 
 [![Reproduce benchmarks](https://github.com/TsutomuTakeuchiTTT/iga-sfh-representation-certification/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TsutomuTakeuchiTTT/iga-sfh-representation-certification/actions/workflows/reproduce.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22315863.svg)](https://doi.org/10.5281/zenodo.22315863)
 
 Reproducibility code for the manuscript:
 
@@ -75,9 +76,7 @@ The scientific checks are based on numerical values, declared tolerances, solver
 
 ## Citation
 
-GitHub will display citation metadata from [`CITATION.cff`](CITATION.cff). Until the manuscript receives a journal DOI, cite the software release itself. After publication, the preferred article citation can be added to `CITATION.cff` and the archived release metadata.
-
-A versioned archival DOI should be created by linking this repository to Zenodo and making a GitHub release. The intended first immutable release is `v1.0.0`.
+GitHub displays citation metadata from [`CITATION.cff`](CITATION.cff). The immutable `v1.0.0` software archive is assigned Zenodo DOI [`10.5281/zenodo.22315863`](https://doi.org/10.5281/zenodo.22315863). Until the manuscript receives a journal DOI, cite this software release. After publication, the preferred article citation can be added to `CITATION.cff` and the archived release metadata.
 
 ## Development disclosure
 

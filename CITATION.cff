@@ -12,6 +12,7 @@ authors:
   - family-names: Matsui
     given-names: "Sena A."
 version: 1.0.0
+doi: "10.5281/zenodo.22315863"
 license: BSD-3-Clause
 repository-code: "https://github.com/TsutomuTakeuchiTTT/iga-sfh-representation-certification"
 url: "https://github.com/TsutomuTakeuchiTTT/iga-sfh-representation-certification"
